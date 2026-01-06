@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  baikal-worker:
+    build: .
+    container_name: baikal_worker
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/code/app  # Le code local remplace celui du conteneur (Hot Reload)
+      

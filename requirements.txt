@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+openpyxl
+python-dotenv
+specklepy
+supabase
+websockets>=13.0
