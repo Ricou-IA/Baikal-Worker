@@ -1,9 +1,36 @@
-fastapi
-uvicorn
-python-multipart
-pandas
-openpyxl
-python-dotenv
+# ==============================================
+# BAIKAL WORKER - Dépendances Python
+# ==============================================
+
+# Framework API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Base de données
+supabase==2.11.0
+
+# Traitement de données (Excel/CSV)
+pandas==2.2.3
+openpyxl==3.1.5
+xlrd==2.0.1
+
+# BIM - Speckle
 specklepy
-supabase
+
+# WebSockets
 websockets>=13.0
+
+# LLM - Claude (Principal)
+anthropic==0.42.0
+
+# LLM - Gemini (Fallback)
+google-generativeai==0.8.4
+
+# Utilitaires
+python-dotenv==1.0.1
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# Validation & Sécurité
+python-jose[cryptography]==3.3.0
