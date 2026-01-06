@@ -1,3 +1,4 @@
+cat > /root/backend-python/Dockerfile << 'EOF'
 # ==============================================
 # BAIKAL WORKER - Python FastAPI
 # Analyse BIM (Speckle) + Données (Excel/CSV)
@@ -39,4 +40,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
 # Commande de démarrage
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+EOF
